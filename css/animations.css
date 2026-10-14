@@ -1,0 +1,26 @@
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+@keyframes soundPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.18); opacity: .65; }
+}
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.screen.is-active .opening-copy,
+.screen.is-active .section-inner,
+.screen.is-active .letter-paper,
+.screen.is-active .final-message,
+.screen.is-active .brand-content {
+  animation: riseIn .7s ease both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .screen.is-active .opening-copy,
+  .screen.is-active .section-inner,
+  .screen.is-active .letter-paper,
+  .screen.is-active .final-message,
+  .screen.is-active .brand-content { animation: none; }
+}
