@@ -1,0 +1,1 @@
+Add photo-1.jpg through photo-5.jpg and prime-creations-logo.png to this folder. See the project README.md for details. Missing images display graceful placeholders.

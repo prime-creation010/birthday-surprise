@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211522">
+  <meta name="description" content="A little birthday experience, made with care by Prime Creations.">
+  <title>A Little Something for You — Prime Creations</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="content.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="wordmark" href="#opening" aria-label="Back to beginning">
+      <span class="wordmark-mark">P<span>·</span>C</span>
+      <span class="wordmark-name">A LITTLE SOMETHING</span>
+    </a>
+    <div class="header-right">
+      <span class="chapter-indicator" id="chapterIndicator">A NOTE FOR YOU</span>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false" aria-label="Turn background music on or off">
+        <span class="sound-icon" aria-hidden="true">♫</span><span id="soundLabel">SOUND OFF</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 01: Opening -->
+    <section class="screen opening-screen is-active" id="opening" aria-labelledby="openingTitle">
+      <div class="opening-copy reveal-up">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-content="openingLabel">A LITTLE SOMETHING FOR YOU, ADRIJA</span><span class="eyebrow-line"></span></p>
+        <h1 id="openingTitle">Some people make life<br><em>a little brighter.</em></h1>
+        <p class="opening-subtitle">And some become family in the most beautiful, unexpected ways.</p>
+        <p class="opening-body">Not every meaningful bond begins with the same surname or the same story. Sometimes, life simply brings someone into your world, and little by little, they begin to mean more than words can easily explain.</p>
+        <button class="button button-primary" id="revealButton" type="button">
+          <span data-content="openingButton">OPEN YOUR SURPRISE</span><span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+        <p class="micro-note">A little experience, made especially for you.</p>
+      </div>
+      <div class="opening-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="sun-disc"><span class="sun-core"></span></div>
+        <div class="art-spark spark-one">✳</div><div class="art-spark spark-two">✦</div>
+        <div class="art-caption">for a person<br>who matters</div>
+        <div class="art-number">01 <span>— 08</span></div>
+      </div>
+      <div class="bottom-hint"><span class="hint-dot"></span> TAKE YOUR TIME · THIS IS YOURS</div>
+    </section>
+
+    <!-- 02: Birthday reveal -->
+    <section class="screen birthday-screen" id="birthday" aria-labelledby="birthdayTitle" hidden>
+      <div class="birthday-backdrop" aria-hidden="true"><span class="backdrop-ring"></span><span class="backdrop-star">✦</span><span class="backdrop-star star-two">✳</span></div>
+      <div class="section-inner birthday-inner">
+        <p class="eyebrow"><span class="eyebrow-line"></span>A DAY WORTH CELEBRATING<span class="eyebrow-line"></span></p>
+        <p class="birthday-date" id="birthdayDate">A little celebration of you</p>
+        <h2 id="birthdayTitle">Happy Birthday,<br><em>DEAR BUNU.</em></h2>
+        <p class="birthday-copy">Today is a little reminder that the world is better with you in it. I hope this new chapter brings you the happiness you deserve, the peace you've been searching for, and countless reasons to smile without needing a reason at all.</p>
+        <div class="signature-line"><span></span><span>Your little surprise is only just beginning.</span><span></span></div>
+        <button class="button button-ghost next-button" data-next="messages" type="button">THERE'S MORE <span class="button-arrow" aria-hidden="true">↓</span></button>
+      </div>
+      <div class="section-index">02 <span>/ 08</span></div>
+    </section>
+
+    <!-- 03: Message cards -->
+    <section class="screen messages-screen" id="messages" aria-labelledby="messagesTitle" hidden>
+      <div class="section-inner wide-inner">
+        <div class="section-heading">
+          <p class="eyebrow">A FEW THINGS I HOPE YOU KNOW</p>
+          <h2 id="messagesTitle">If you ever need<br><em>a little reminder.</em></h2>
+          <p>Keep these words for the days when you need them most.</p>
+        </div>
+        <div class="message-grid">
+          <article class="message-card message-card-large">
+            <span class="card-number">01 / YOU MATTER</span><span class="card-symbol" aria-hidden="true">✳</span>
+            <h3>You matter.<br><em>More than you know.</em></h3>
+            <p>Never underestimate the difference your presence can make. You don't have to do something extraordinary every day to be someone extraordinary in the lives of others. Sometimes, simply being yourself is already more than enough.</p>
+          </article>
+          <article class="message-card">
+            <span class="card-number">02 / YOUR HAPPINESS</span><span class="card-symbol" aria-hidden="true">✧</span>
+            <h3>Your happiness<br>matters, too.</h3>
+            <p>I hope you never become so busy taking care of everything around you that you forget to take care of your own happiness. You deserve peaceful days, genuine laughter, kind people, and the freedom to become whoever you dream of being.</p>
+          </article>
+          <article class="message-card">
+            <span class="card-number">03 / CHOSEN FAMILY</span><span class="card-symbol" aria-hidden="true">∞</span>
+            <h3>Family is more<br><em>than blood.</em></h3>
+            <p>Life has a beautiful way of reminding us that family isn't always defined by a shared surname or a common beginning. Sometimes, it is found in the people we choose to value, the bonds we choose to nurture, and the place someone quietly earns in our hearts.</p>
+          </article>
+          <article class="message-card message-card-wide">
+            <span class="card-number">04 / YOUR OWN JOURNEY</span><span class="card-symbol" aria-hidden="true">↗</span>
+            <h3>Never stop<br><em>becoming.</em></h3>
+            <p>Be proud of the person you are today, even while you're working towards the person you hope to become. You are allowed to grow slowly, change your mind, make mistakes, and begin again. You don't have to have everything figured out to deserve good things.</p>
+          </article>
+        </div>
+        <div class="section-footer-row"><span class="small-note">READ THESE AT YOUR OWN PACE</span><button class="button button-ghost next-button" data-next="gallery" type="button">A FEW MOMENTS <span class="button-arrow" aria-hidden="true">↓</span></button></div>
+      </div>
+      <div class="section-index">03 <span>/ 08</span></div>
+    </section>
+
+    <!-- 04: Photo gallery -->
+    <section class="screen gallery-screen" id="gallery" aria-labelledby="galleryTitle" hidden>
+      <div class="section-inner wide-inner">
+        <div class="section-heading gallery-heading">
+          <p class="eyebrow">A LITTLE COLLECTION</p>
+          <h2 id="galleryTitle">Moments worth<br><em>keeping close.</em></h2>
+          <p>Five little spaces for photographs and the feelings they hold.</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <figure class="photo-card photo-featured" data-photo="0">
+            <div class="photo-frame"><img src="assets/images/photo-1.jpg" alt="Featured birthday photograph" loading="lazy"><div class="photo-placeholder"><span class="placeholder-spark">✳</span><span>YOUR FAVOURITE PHOTO</span><small>Add photo-1.jpg</small></div><span class="photo-count">01 / THE FEATURE</span></div>
+            <figcaption>Some moments deserve to be remembered, and some people deserve to be celebrated simply for being who they are.</figcaption>
+          </figure>
+          <figure class="photo-card" data-photo="1">
+            <div class="photo-frame"><img src="assets/images/photo-2.jpg" alt="Birthday memory photograph 2" loading="lazy"><div class="photo-placeholder"><span class="placeholder-spark">✧</span><span>A LITTLE MEMORY</span><small>Add photo-2.jpg</small></div><span class="photo-count">02</span></div>
+            <figcaption>Every chapter has its own quiet kind of beauty.</figcaption>
+          </figure>
+          <figure class="photo-card" data-photo="2">
+            <div class="photo-frame"><img src="assets/images/photo-3.jpg" alt="Birthday memory photograph 3" loading="lazy"><div class="photo-placeholder"><span class="placeholder-spark">✳</span><span>A LITTLE MEMORY</span><small>Add photo-3.jpg</small></div><span class="photo-count">03</span></div>
+            <figcaption>May life always leave room for the little things that make you smile.</figcaption>
+          </figure>
+          <figure class="photo-card" data-photo="3">
+            <div class="photo-frame"><img src="assets/images/photo-4.jpg" alt="Birthday memory photograph 4" loading="lazy"><div class="photo-placeholder"><span class="placeholder-spark">✦</span><span>A LITTLE MEMORY</span><small>Add photo-4.jpg</small></div><span class="photo-count">04</span></div>
+            <figcaption>Growing, changing, becoming — every version of you deserves kindness.</figcaption>
+          </figure>
+          <figure class="photo-card" data-photo="4">
+            <div class="photo-frame"><img src="assets/images/photo-5.jpg" alt="Birthday memory photograph 5" loading="lazy"><div class="photo-placeholder"><span class="placeholder-spark">✧</span><span>A LITTLE MEMORY</span><small>Add photo-5.jpg</small></div><span class="photo-count">05</span></div>
+            <figcaption>Here's to more beautiful moments waiting just around the corner.</figcaption>
+          </figure>
+        </div>
+        <p class="gallery-note">Some people make the world a little softer, the days a little brighter, and life a little more beautiful simply by being in it. You are one of those rare souls, and I hope life gives you back all the happiness your presence brings to others.</p>
+        <div class="center-action"><button class="button button-ghost next-button" data-next="letter" type="button">A LETTER FOR YOU <span class="button-arrow" aria-hidden="true">↓</span></button></div>
+      </div>
+      <div class="section-index">04 <span>/ 08</span></div>
+    </section>
+
+    <!-- 05: Letter -->
+    <section class="screen letter-screen" id="letter" aria-labelledby="letterTitle" hidden>
+      <div class="letter-decoration" aria-hidden="true"><span>WITH</span><span>CARE</span></div>
+      <article class="letter-paper">
+        <p class="eyebrow">NOT JUST FOR TODAY</p>
+        <h2 id="letterTitle">A letter, from<br><em>my heart to you.</em></h2>
+        <div class="letter-body">
+          <p>DEAR BUNU❤</p>
+          <p>There are some things that are difficult to explain in everyday conversations, so I thought I'd put them here, somewhere you could come back to whenever you wanted.</p>
+          <p>First of all, I'm genuinely glad that you're a part of my life. Maybe we aren't connected by blood, and maybe our story isn't the kind that people would traditionally call family. But I've come to believe that some relationships are too meaningful to be measured by those things.</p>
+          <p>Sometimes, people become important to us in ways we never planned. They find a place in our lives, and before we even realise it, the bond begins to mean something special. For me, you're one of those people.</p>
+          <p>I want you to know that I see you as someone worth caring about, respecting, supporting, and celebrating. Not just on your birthday, not just when everything is going well, but as a person whose happiness genuinely matters.</p>
+          <p>And if there's one thing I hope you remember about our bond, it's this: I don't need us to share the same blood to see you as a sister. That is what this relationship means to me.</p>
+          <p>I hope life gives you opportunities that excite you, people who understand you, moments that make you laugh until you forget your worries, and the courage to keep moving towards the things you dream about.</p>
+          <p>There will be days when everything feels wonderful and days when things don't go as planned. Through all the ordinary changes that life brings, I hope you never forget that you deserve kindness, respect, and happiness.</p>
+          <p>I cannot promise that life will always be easy, or that I will always know the perfect thing to say. But I can tell you that I genuinely value the bond we share, and I hope to keep being someone who treats you with the care and respect a brother should.</p>
+          <p>So, today, I'm not just wishing you another year of life. I'm wishing you a year filled with reasons to love the life you're building, people who appreciate the person you are, and memories that you'll look back on with a smile.</p>
+          <p>Thank you for being someone I wanted to make something special for.</p>
+          <p>Happy Birthday. May the coming year be kind to you.</p>
+          <p class="letter-signoff">With affection and best wishes,<br><em>Your brother, in the way that matters to me.</em></p>
+        </div>
+        <div class="letter-seal" aria-hidden="true">P<span>·</span>C</div>
+      </article>
+      <div class="center-action letter-next"><button class="button button-ghost next-button" data-next="wishes" type="button">A WISH FOR YOUR FUTURE <span class="button-arrow" aria-hidden="true">↓</span></button></div>
+      <div class="section-index">05 <span>/ 08</span></div>
+    </section>
+
+    <!-- 06: Wishes -->
+    <section class="screen wishes-screen" id="wishes" aria-labelledby="wishesTitle" hidden>
+      <div class="wishes-glow" aria-hidden="true"></div>
+      <div class="section-inner wishes-inner">
+        <p class="eyebrow">FOR EVERYTHING WAITING AHEAD</p>
+        <h2 id="wishesTitle">A future that feels<br><em>like your own.</em></h2>
+        <div class="wish-list">
+          <p>I hope this year brings you closer to the things that make your heart feel full.</p>
+          <p>I hope you find happiness in unexpected places, strength when things get difficult, and people who appreciate you without asking you to become someone else.</p>
+          <p>May you discover new things about yourself, find courage in the moments that challenge you, and collect memories that remind you how beautiful life can be.</p>
+          <p>And most of all, I hope you give yourself the same kindness you so freely deserve from the world.</p>
+          <p class="wish-emphasis">You deserve a future that feels like your own — one filled with hope, possibilities, and genuine happiness.</p>
+        </div>
+        <div class="wish-signature">For all the days still to come <span>✳</span></div>
+        <button class="button button-primary next-button" data-next="lastWish" type="button">ONE LAST THING <span class="button-arrow" aria-hidden="true">↓</span></button>
+      </div>
+      <div class="section-index">06 <span>/ 08</span></div>
+    </section>
+
+    <!-- 07: Final birthday message -->
+    <section class="screen final-birthday-screen" id="lastWish" aria-labelledby="lastWishTitle" hidden>
+      <div class="final-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="final-message">
+        <p class="eyebrow">BEFORE YOU GO</p>
+        <h2 id="lastWishTitle">One last<br><em>thing...</em></h2>
+        <p>Whatever changes with time, I hope you never forget that you matter, that your happiness matters, and that some bonds are special precisely because they are chosen.</p>
+        <p>I'm glad life gave me the chance to know you.</p>
+        <p class="final-name">Happy Birthday, <span data-content="recipientName">[HER NAME]</span>.</p>
+        <p class="made-for-you">Made with care, especially for you.</p>
+        <button class="button button-primary" id="brandPageButton" type="button">SEE WHO MADE THIS <span class="button-arrow" aria-hidden="true">↗</span></button>
+      </div>
+      <div class="section-index">07 <span>/ 08</span></div>
+    </section>
+
+    <!-- 08: Prime Creations signature -->
+    <section class="screen brand-screen" id="brandPage" aria-labelledby="brandTitle" hidden>
+      <div class="brand-topline"><span>AN IDEA, MADE REAL</span><span>PRIME CREATIONS · 2026</span></div>
+      <div class="brand-content">
+        <div class="brand-logo-wrap" id="brandLogoWrap">
+          <img id="brandLogo" src="assets/images/prime-creations-logo.png" alt="Prime Creations logo">
+          <div class="brand-logo-fallback" id="brandLogoFallback"><span class="fallback-monogram">P<span>·</span>C</span><span>PRIME CREATIONS</span></div>
+        </div>
+        <p class="brand-manifesto">Made with a little creativity,<br>a lot of care, and the intention<br>to make someone smile.</p>
+        <div class="brand-rule"><span></span><span class="rule-star">✳</span><span></span></div>
+        <p class="brand-crafted">Crafted with care by</p>
+        <h2 id="brandTitle">PRIME<br><em>CREATIONS</em></h2>
+        <p class="brand-creator">Created by <strong data-content="creatorName">Priyam Mondal</strong></p>
+        <div class="brand-contact">
+          <p class="brand-question">Want something special<br><em>made for you?</em><br><em>Call us at-9233788413</em></p>
+          <p>From thoughtful personal websites to creative digital experiences, let's turn your ideas into something memorable.</p>
+          <a class="button button-primary email-button" id="contactLink" href="mailto:primepriyam010@gmail.com">GET YOURS MADE — EMAIL PRIME CREATIONS <span class="button-arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <p class="brand-closing">Every creation begins with an idea.<br><em>This one began with a wish.</em></p>
+      </div>
+      <footer class="brand-footer"><span>© <span id="copyrightYear">2026</span> Prime Creations · Crafted with care.</span><a href="#opening" id="replayLink">REPLAY THE EXPERIENCE ↗</a></footer>
+      <div class="section-index">08 <span>/ 08</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="siteFooter">
+    <span>MADE WITH CARE BY <strong>PRIME CREATIONS</strong></span>
+    <span class="footer-spark" aria-hidden="true">✳</span>
+    <span>AN EXPERIENCE CREATED TO MAKE YOU SMILE</span>
+  </footer>
+
+  <audio id="backgroundMusic" src="assets/audio/your-song.mp3" preload="none" loop></audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
